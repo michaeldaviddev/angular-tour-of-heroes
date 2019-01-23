@@ -1,0 +1,8 @@
+.list-item:hover {
+    background: #f5f5f5;
+    cursor: pointer;
+}
+.list-item.selected {
+    background: #ffd740;
+    color: rgba(0, 0, 0, 0.87);
+}
