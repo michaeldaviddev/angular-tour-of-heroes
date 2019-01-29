@@ -1,5 +1,9 @@
 <mat-toolbar color="primary">
   <span>{{title}}</span>
 </mat-toolbar>
-<app-heroes></app-heroes>
+<nav class="container">
+  <a mat-raised-button routerLink="/dashboard">Dashboard</a>
+  <a mat-raised-button routerLink="/heroes">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
 <app-messages></app-messages>

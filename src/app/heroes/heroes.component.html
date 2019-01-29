@@ -2,9 +2,9 @@
 
 <mat-list>
   <mat-list-item><h2>My Heroes</h2></mat-list-item>
-  <mat-list-item class="list-item" *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
+  <mat-list-item routerLink="/detail/{{hero.id}}" class="list-item" *ngFor="let hero of heroes">
     {{hero.id}} - {{hero.name}}
   </mat-list-item>
 </mat-list>
 
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
